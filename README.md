@@ -1,0 +1,1 @@
+# trocr_torchserve
