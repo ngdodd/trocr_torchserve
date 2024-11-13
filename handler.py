@@ -18,7 +18,6 @@ class CustomHandler(BaseHandler):
     image_list = requests[0].get("data")
     if image_list is None:
         image_list = requests[0].get("body")
-    print(requests)
     
     # capable of accepting multiple images at a time for batching inference calls
     images = []
@@ -37,5 +36,4 @@ class CustomHandler(BaseHandler):
 
   def postprocess(self, outputs):
     decoded_outputs = self.processor.batch_decode(outputs, skip_special_tokens=True)
-    print(decoded_outputs)
     return [decoded_outputs]

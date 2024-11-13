@@ -71,7 +71,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Send images to TorchServe model.")
     parser.add_argument("--ids", type=str, required=True, help="Comma-separated IDs of the test dataset images to process.")
     parser.add_argument("--max_batch_size", type=int, default=4, help="Max number of images to process in a single request.")
-    parser.add_argument("--model_url", type=str, default="http://127.0.0.1:8081/predictions/trocr_base", help="Prediction server url.")
+    parser.add_argument("--model_url", type=str, default="http://127.0.0.1:8080/predictions/trocr_base", help="Prediction server url.")
     args = parser.parse_args()
 
     main(args.ids, args.max_batch_size, args.model_url)

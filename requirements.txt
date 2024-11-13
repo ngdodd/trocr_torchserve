@@ -1,11 +1,6 @@
-datasets
-matplotlib
 numpy
 nvgpu
 pillow
-requests
 torch
-torchserve
-torch_tb_profiler
 tqdm
 transformers

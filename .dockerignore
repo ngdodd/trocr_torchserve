@@ -1,0 +1,13 @@
+# Ignore everything by default
+*
+
+# Include the necessary files and directories
+!model_store/
+!trocr_model/
+!config.properties
+!handler.py
+!requirements.txt
+
+# Ignore certain files that might still be included
+!.dockerignore
+!.gitignore
